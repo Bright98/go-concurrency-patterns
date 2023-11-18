@@ -1,29 +1,13 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
 func main() {
-	cancel := make(chan struct{})
+	//handle with channels
+	cancelWithClose()
 
-	go handleRunning(cancel)
+	fmt.Println("------------")
 
-	time.Sleep(time.Second * 3)
-	close(cancel)
-
-	time.Sleep(time.Second)
-}
-func handleRunning(cancel chan struct{}) {
-	for {
-		select {
-		case <-cancel:
-			fmt.Println("cancelled")
-			return
-		default:
-			fmt.Println("running...")
-			time.Sleep(time.Second)
-		}
-	}
+	//handle with context
+	cancelWithContext()
 }
