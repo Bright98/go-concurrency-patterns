@@ -1,9 +1,7 @@
 # Golang Concurrency Patterns
 
 <div  style="display: flex; width: 100%; justify-content: center;">
-
-[//]: # (<img src="https://banner2.cleanpng.com/20180731/tzw/kisspng-gopher-docker-computer-programming-clojure-5b60bcbbaea281.7058312815330664277153.jpg" width="300" />)
-<img src="images/go-lang.png" width="300" />
+  <img src="images/go-lang.png" width="300" />
 </div>
 
 This repository serves as a collection of Golang concurrency patterns, and some examples.
@@ -20,7 +18,7 @@ It aims to provide developers with a reference for understanding and implementin
     - [4. Pooling](#4-pooling)
     - [5. Drop](#5-drop)
     - [6. Cancellation](#6-cancellation)
-- [Examples](#examples)
+- [Examples](https://github.com/Bright98/go-concurrency-patterns/tree/main/real-example)
 
 ## Introduction
 
