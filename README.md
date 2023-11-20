@@ -4,7 +4,7 @@
   <img src="images/go-lang.png" width="250"  alt="go-logo"/>
 </p>
 
-<p>
+<p align="center">
 This repository serves as a collection of Golang concurrency patterns, and some examples.
 It aims to provide developers with a reference for understanding and implementing concurrency in Go.
 </p>
