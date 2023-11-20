@@ -1,8 +1,8 @@
 # Golang Concurrency Patterns
 
-<div  style="display: flex; width: 100%; justify-content: center;">
+<p align="center">
   <img src="images/go-lang.png" width="250"  alt="go-logo"/>
-</div>
+</p>
 
 <p>
 This repository serves as a collection of Golang concurrency patterns, and some examples.
