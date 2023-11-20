@@ -1,7 +1,9 @@
 # Golang Concurrency Patterns
 
 <div  style="display: flex; width: 100%; justify-content: center;">
-<img src="https://banner2.cleanpng.com/20180731/tzw/kisspng-gopher-docker-computer-programming-clojure-5b60bcbbaea281.7058312815330664277153.jpg" width="300" />
+
+[//]: # (<img src="https://banner2.cleanpng.com/20180731/tzw/kisspng-gopher-docker-computer-programming-clojure-5b60bcbbaea281.7058312815330664277153.jpg" width="300" />)
+<img src="images/go-lang.png" width="300" />
 </div>
 
 This repository serves as a collection of Golang concurrency patterns, and some examples.
