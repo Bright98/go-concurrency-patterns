@@ -1,11 +1,13 @@
 # Golang Concurrency Patterns
 
 <div  style="display: flex; width: 100%; justify-content: center;">
-  <img src="images/go-lang.png" width="300" />
+  <img src="images/go-lang.png" width="250"  alt="go-logo"/>
 </div>
 
+<p>
 This repository serves as a collection of Golang concurrency patterns, and some examples.
 It aims to provide developers with a reference for understanding and implementing concurrency in Go.
+</p>
 
 
 ## Table of Contents
