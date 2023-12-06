@@ -2,35 +2,24 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
+var ch = make(chan int)
+var done = make(chan struct{})
+
 func producer(ch chan<- int) {
-	for {
-		data := rand.Intn(100)
-		ch <- data
-		fmt.Println("produced: ", data)
-		time.Sleep(time.Millisecond * 100)
+	for i := 0; i < 100; i++ {
+		ch <- i
 	}
+	done <- struct{}{}
 }
-func consumer1(ch <-chan int) {
+func consumer(ch <-chan int) {
 	for data := range ch {
-		fmt.Println("consume 1: ", data)
+		fmt.Println("consume: ", data)
 	}
-	time.Sleep(time.Millisecond * 300)
-}
-func consumer2(ch <-chan int) {
-	for data := range ch {
-		fmt.Println("consume 2: ", data)
-	}
-	time.Sleep(time.Millisecond * 150)
 }
 func main() {
-	ch := make(chan int)
 	go producer(ch)
-	go consumer1(ch)
-	go consumer2(ch)
-
-	time.Sleep(time.Second * 1)
+	go consumer(ch)
+	<-done
 }
