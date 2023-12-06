@@ -5,7 +5,7 @@ import "testing"
 // go test . -> pass
 // but
 // go test . --race failed because of data racing
-// answer: using Mutex
+// answer: using atomic
 
 func TestGame(t *testing.T) {
 	player := NewPlayer()
